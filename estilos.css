@@ -91,3 +91,12 @@ box-shadow: 0 0 4px white;
 .formulario a:hover {
   text-decoration: underline;
 }
+
+.formulario img{
+  display: block;
+  margin: 0px auto;
+  width: 90px;
+  margin-top: 6px;
+  border-radius: 60%;
+  
+}
