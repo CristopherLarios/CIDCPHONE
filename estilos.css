@@ -38,6 +38,7 @@ body {
   background: #121e56ec;
   font-size: 14px;
   font-weight: bold;
+  color: white;
 }
 
 .buttons {
@@ -47,11 +48,20 @@ body {
   border-radius: 12px;
   border: 2px solid #f16100;
   color: white;
-  
-
-
   margin-bottom: 16px;
+  font-size: large;
+  transition-duration:0.5;
 }
+
+.buttons:hover{
+background-color: #f16100;
+cursor: pointer;
+}
+
+.buttons:active{
+  transform: translateY(2px);
+}
+
 
 .formulario p {
   height: 40px;
