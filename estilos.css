@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+:root{
+  --color-Naranja:#FF9028 ;
+  --color-Principal:#121e56ec;
+  --color-texttos:white;
+}
+
 body {
   font-family: Arial;
   background-image: url("images/gotaslluvia.jpg");
@@ -12,13 +18,14 @@ body {
 .formulario {
   width: 400px;
   height: 400px;
-  background-color: #121e56ec; /*color de fondo del formulario*/
+  background-color: var(--color-Principal); /*color de fondo del formulario*/
   margin: auto;
-  margin-top: 90px;
+  margin-top: 55px;
   box-shadow: 0px 1px 40px #f16100; /*color de la sombra*/
   padding: 20px 30px;
-  border-top: 1px solid #f16100; /*color del borde superior*/
-  color: white; /*color de las letras*/
+  border-top: 1px solid var(--color-Naranja); /*color del borde superior*/
+  color: var(--color-texttos); /*color de las letras*/
+  border-radius: 12px;
 }
 
 .formulario h2 {
@@ -32,43 +39,44 @@ body {
 
 .controls {
   width: 100%;
-  border: 1px solid #f16100;
+  border: 1px solid var(--color-Naranja);/*borde de las cajas de texto*/
   margin-bottom: 15px;
   padding: 11px 10px;
-  background: #121e56ec;
+  background: var(--color-Principal);
   font-size: 14px;
   font-weight: bold;
-  color: white;
+  color: var(--color-texttos);
+  border-radius: 12px;
 }
 
 .controls:hover{
-  background-color: #f16100;
-  border: solid 2px white;
-  box-shadow: 0 0 4px white;
+  background-color: var(--color-Naranja);
+  border: solid 2px var(--color-texttos);
+  box-shadow: 0 0 4px var(--color-texttos);
 }
 
 .controls:focus{
-  background-color: #f16100;
-  border: solid 2px white;
-  box-shadow: 0 0 4px white;
+  background-color: var(--color-Naranja);
+  border: solid 2px var(--color-texttos);
+  box-shadow: 0 0 4px var(--color-texttos);
 }
 
 .buttons {
   width: 100%;
   height: 40px;
-  background: #121e56ec;
+  background: var(--color-Principal);
   border-radius: 12px;
-  border: 2px solid #f16100;
-  color: white;
+  border: 2px solid var(--color-Naranja);
+  color: var(--color-texttos);
   margin-bottom: 16px;
   font-size: large;
   transition-duration:0.5;
 }
 
 .buttons:hover{
-background-color: #f16100;
+background-color: var(--color-Naranja);
 cursor: pointer;
-box-shadow: 0 0 4px white;
+box-shadow: 0 0 4px var(--color-texttos);
 }
 
 .buttons:active{
@@ -83,7 +91,7 @@ box-shadow: 0 0 4px white;
 }
 
 .formulario a {
-  color: white;
+  color: var(--color-texttos);
   text-decoration: none;
   font-size: 14px;
 }
