@@ -29,3 +29,40 @@ img {
 .navbar .navbar-toggler{
   border-color: var(--color-texttos);
 }
+
+.bi{
+  color:var(--color-texttos);
+  font-size: 2rem;
+}
+
+/* centrado de inicio */
+.bi-house-door{
+padding-left: 2px;
+}
+
+/* centrado del inventario */
+.bi-pie-chart-fill{
+  padding-left: 17px;
+}
+
+/* centrado del detalles */
+.bi-card-list{
+  padding-left: 10px;
+}
+/* centrado del pedidos*/
+.bi-cart-check{
+  padding-left: 9px;
+}
+/* centrado de ventas */
+.bi-check-circle{
+  padding-left: 2px;
+}
+/* centrado de Clientes */
+.bi-person-circle{
+  padding-left: 10px;
+}
+
+#ListaIconos{
+  padding-left: 65px;
+}
+
