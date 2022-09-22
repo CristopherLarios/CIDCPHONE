@@ -10,7 +10,10 @@ html {
 
 body {
   min-height: 100%;
-  
+}
+
+.contenedor_header{
+  background-color: #414D62;
 }
 
 .fondomenu{
