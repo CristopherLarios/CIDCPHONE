@@ -5,6 +5,9 @@ html {
 body {
   padding: 0;
   margin: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .sec-form-product {
@@ -14,4 +17,59 @@ body {
   padding: 1rem;
   margin: 0.25rem;
   border-radius: 10px;
+}
+
+.controls {
+  margin: 0.5rem;
+}
+
+.btn-update {
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: red;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background: #e62222;
+}
+.btn-update .text {
+  transform: translateX(35px);
+  color: white;
+  font-weight: bold;
+  transition: 300ms;
+}
+.btn-update .icon {
+  position: absolute;
+  border-left: 1px solid #c41b1b;
+  transform: translateX(100px);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-update i {
+  width: 15px;
+  color: #eee;
+}
+
+.btn-update:hover {
+  background: #ff3636;
+}
+
+.btn-update:hover .text {
+  color: transparent;
+}
+
+.btn-update:hover .icon {
+  width: 150px;
+  border-left: none;
+  transform: translateX(0);
+}
+
+.btn-update:focus {
+  outline: none;
 }/*# sourceMappingURL=index.css.map */
