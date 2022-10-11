@@ -1,0 +1,10 @@
+@use "globals";
+//seccion de formulario de productos
+.sec-form-product{
+    float: left;
+    background-color: globals.$color-Principal;
+        color:  globals.$color-Naranja;
+    padding: 1rem;
+    margin: 0.25rem;
+    border-radius: 10px;
+    }
