@@ -7,14 +7,21 @@ body {
   margin: 0;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position:center center;
+  background-position: center center;
 }
 
 $color-Naranja: #ff9028;
 $color-Principal: #121e56ec;
 $color-texttos: white;
 
-$color-update:#0D6EFD;
-$color-cancelar:#6C757D;
-$color-guardar:#198754;
-$color-eliminar:#ff3636;
+$color-update: #0d6efd;
+$color-cancelar: #6c757d;
+$color-guardar: #198754;
+$color-eliminar: #ff3636;
+
+//quita las flechas de los inputs number
+input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+

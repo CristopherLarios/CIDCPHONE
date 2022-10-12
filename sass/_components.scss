@@ -8,8 +8,8 @@
   padding: 1rem;
   margin: 0.25rem;
   border-radius: 10px;
+  
 }
-
 .controls {
   margin: 8px;
      .controls-comp{
@@ -17,6 +17,34 @@
     padding-left: 17px; 
     }
 }
+//Seccionn de busqueda
+.sec-search-product {
+  display: flex;
+  .container {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  input {
+    border: 3px solid transparent;
+    border-radius: 10px;
+    background-color: #f3f3f4;
+    text-align: center;
+    margin-left: 5px;
+  }
+
+  input:focus{
+    outline: none;
+    border-color: globals.$color-Principal;
+  }
+
+  i{
+    color: globals.$color-Principal;
+   
+  }
+}
+
 //Button Update
 .btn-update {
   width: 150px;

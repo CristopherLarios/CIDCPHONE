@@ -10,6 +10,10 @@ body {
   background-position: center center;
 }
 
+input[type=number]::-webkit-inner-spin-button {
+  appearance: none;
+}
+
 .sec-form-product {
   float: left;
   background-color: rgba(18, 30, 86, 0.9254901961);
@@ -27,17 +31,40 @@ body {
   padding-left: 17px;
 }
 
+.sec-search-product {
+  display: flex;
+}
+.sec-search-product .container {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.sec-search-product input {
+  border: 3px solid transparent;
+  border-radius: 10px;
+  background-color: #f3f3f4;
+  text-align: center;
+  margin-left: 5px;
+}
+.sec-search-product input:focus {
+  outline: none;
+  border-color: rgba(18, 30, 86, 0.9254901961);
+}
+.sec-search-product i {
+  color: rgba(18, 30, 86, 0.9254901961);
+}
+
 .btn-update, .btn-save, .btn-cancel, .btn-delete {
   width: 150px;
   height: 40px;
   cursor: pointer;
   display: flex;
   align-items: center;
-  background: #0D6EFD;
+  background: #0d6efd;
   border: none;
   border-radius: 5px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
-  background: #0D6EFD;
+  background: #0d6efd;
 }
 .btn-update .text, .btn-save .text, .btn-cancel .text, .btn-delete .text {
   transform: translateX(35px);
@@ -60,7 +87,7 @@ body {
 }
 
 .btn-update:hover, .btn-save:hover, .btn-cancel:hover, .btn-delete:hover {
-  background: #0D6EFD;
+  background: #0d6efd;
 }
 
 .btn-update:hover .text, .btn-save:hover .text, .btn-cancel:hover .text, .btn-delete:hover .text {
@@ -88,13 +115,13 @@ body {
 }
 
 .btn-cancel {
-  background: #6C757D;
-  background: #6C757D;
-  color: #6C757D;
+  background: #6c757d;
+  background: #6c757d;
+  color: #6c757d;
 }
 
 .btn-cancel:hover {
-  background: #6C757D;
+  background: #6c757d;
 }
 
 .btn-save {
