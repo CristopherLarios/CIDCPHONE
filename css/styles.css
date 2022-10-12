@@ -54,6 +54,13 @@ input[type=number]::-webkit-inner-spin-button {
   color: rgba(18, 30, 86, 0.9254901961);
 }
 
+.sec-table-detproduct {
+  display: flex;
+}
+.sec-table-detproduct .container {
+  text-align: center;
+}
+
 .btn-update, .btn-save, .btn-cancel, .btn-delete {
   width: 150px;
   height: 40px;
