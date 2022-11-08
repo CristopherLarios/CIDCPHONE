@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/styles.css" />
+    <script src="../JS/Estado_Botones.js"></script>
     <title>Productos</title>
   </head>
 
@@ -46,19 +47,19 @@
           </select>
           <!-- input de stock de producto -->
           <label for="stockproducto">Stock</label>
-          <input class="form-control" type="number" id="stockproducto" />
+          <input class="form-control" type="number" id="stockproducto" required />
           <!-- input de costo de producto -->
           <label for="costoproducto">Costo</label>
           <div class="input-group">
             <span class="input-group-text">$</span>
-            <input type="number" class="form-control" id="costoproducto" />
+            <input type="number" class="form-control" id="costoproducto" required />
           </div>
           <!-- input de color de producto -->
           <label for="colorproducto">Color</label>
-          <input class="form-control" type="text" id="colorproducto" />
+          <input class="form-control" type="text" id="colorproducto" required />
           <!-- input de imei de producto -->
           <label for="imeiproducto">Imei</label>
-          <input class="form-control" type="number" id="imeiproducto" />
+          <input class="form-control" type="number" id="imeiproducto" required />
           <!--input de observacion de producto  -->
           <label for="observacionproducto">Observacion</label>
           <textarea
@@ -71,8 +72,8 @@
         <!-- container de control del formulario -->
         <div class="controls">
           <!--UPDATE-->
-          <div class="controls-comp">
-            <button class="btn-update">
+          <div  class="controls-comp">
+            <button onclick="case_Update()" class="btn-update" id="btn-update">
               <span class="text">Modificar</span>
               <span class="icon">
                 <i class="bi bi-arrow-repeat"></i>
@@ -81,7 +82,7 @@
           </div>
           <div class="controls-comp">
             <!--Eliminar-->
-            <button class="btn-delete">
+            <button onclick="case_Delete()" class="btn-delete" id="btn-delete">
               <span class="text">Eliminar</span>
               <span class="icon">
                 <i class="bi bi-trash3"></i>
@@ -91,7 +92,7 @@
 
           <div class="controls-comp">
             <!--Cancelar-->
-            <button class="btn-cancel">
+            <button onclick="case_Cancel()" style="display:none" class="btn-cancel" id="btn-cancel">
               <span class="text">Cancelar</span>
               <span class="icon">
                 <i class="bi bi-x-circle"></i>
@@ -101,7 +102,7 @@
 
           <div class="controls-comp">
             <!--Guardar-->
-            <button class="btn-save">
+            <button onclick="case_Save()" style="display:none" class="btn-save" id="btn-save" >
               <span class="text">Guardar</span>
               <span class="icon">
                 <i class="bi bi-check2-all"></i>
